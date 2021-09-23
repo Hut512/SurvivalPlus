@@ -1,0 +1,4 @@
+name: SurvivalPlus
+version: '${project.version}'
+main: de.intentiongames.survivalplus.Main
+api-version: 1.17
