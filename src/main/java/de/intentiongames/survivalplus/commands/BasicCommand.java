@@ -29,7 +29,7 @@ public abstract class BasicCommand extends BukkitCommand {
             bukkitCommandMap.setAccessible(true);
             CommandMap commandMap = (CommandMap) bukkitCommandMap.get(Bukkit.getServer());
 
-            commandMap.register(command.getName(), command);
+            commandMap.register("intentiongames", command);
         }catch (NoSuchFieldException | IllegalAccessException exception) {
             throw new SecurityException("Exception registering command: " + command.getName(), exception);
         }
